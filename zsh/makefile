@@ -3,6 +3,8 @@ install:
 	brew install --cask font-jetbrains-mono-nerd-font
 	@echo "安装starship" 
 	brew install starship
+	@echo "安装lsd"
+	brew install lsd
 recover: install
 	@echo "恢复zshrc"
 	cp .zshrc ~/.zshrc
