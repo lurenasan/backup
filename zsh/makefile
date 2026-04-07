@@ -5,7 +5,7 @@ install:
 	brew install starship
 	@echo "安装lsd"
 	brew install lsd
-recover: install
+recover:
 	@echo "恢复zshrc"
 	cp .zshrc ~/.zshrc
 	@echo "恢复starship"
