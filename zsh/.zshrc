@@ -3,6 +3,7 @@
 eval "$(starship init zsh)"
 # zsh-autosuggestions插件
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 # 绑定上下箭头
 bindkey '^[[A' history-substring-search-up
