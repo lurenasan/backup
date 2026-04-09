@@ -19,6 +19,10 @@ alias lt='lsd --tree' # 树状显示（类似 tree 命令，非常直观）
 alias proxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897'
 alias unproxy='unset https_proxy http_proxy all_proxy'
 
+# =====paraelles desktop=====
+alias pd_list='prlctl list --all'
+alias pd_start='prlctl start "Ubuntu Linux"'
+alias pd_stop='prlctl stop "Ubuntu Linux"'
 # =====主题初始化=====
 eval "$(starship init zsh)"
 # =====node环境管理=====
