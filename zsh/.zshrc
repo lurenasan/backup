@@ -3,6 +3,10 @@
 eval "$(starship init zsh)"
 # zsh-autosuggestions插件
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+# 绑定上下箭头
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 # =====ssh传递lang,lc,防止ssh之后的vim使用ascii编码打开utf8文件=====
 export LANG=zh_CN.UTF-8
 export LC_ALL=zh_CN.UTF-8
@@ -11,8 +15,8 @@ export LC_ALL=zh_CN.UTF-8
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' matcher-list \
-  'm:{a-z}={A-Za-z}' \
-  'r:|[._-]=* r:|=*'
+   'm:{a-z}={A-Za-z}' \
+   'r:|[._-]=* r:|=*'
 
 # =====lsd替换掉默认的ls=====
 alias ls='lsd'    # 基本的文件列表

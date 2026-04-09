@@ -11,6 +11,8 @@ install:
 	brew install fzf
 	@echo "安装zsh-autosuggestions"
 	brew install zsh-autosuggestions
+	@echo "安装zsh-history-substring-search"
+	brew install zsh-history-substring-search
 recover:
 	@echo "恢复zshrc"
 	cp .zshrc ~/.zshrc
