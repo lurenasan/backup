@@ -1,3 +1,8 @@
+# =====zsh相关=====
+# starship主题 
+eval "$(starship init zsh)"
+# zsh-autosuggestions插件
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # =====ssh传递lang,lc,防止ssh之后的vim使用ascii编码打开utf8文件=====
 export LANG=zh_CN.UTF-8
 export LC_ALL=zh_CN.UTF-8
@@ -23,7 +28,6 @@ alias unproxy='unset https_proxy http_proxy all_proxy'
 alias pd_list='prlctl list --all'
 alias pd_start='prlctl start "Ubuntu Linux"'
 alias pd_stop='prlctl stop "Ubuntu Linux"'
-# =====主题初始化=====
-eval "$(starship init zsh)"
+
 # =====node环境管理=====
 eval "$(fnm env --use-on-cd --shell zsh)"

@@ -5,6 +5,12 @@ install:
 	brew install starship
 	@echo "安装lsd"
 	brew install lsd
+	@echo "安装yazi"
+	brew install yazi
+	@echo "fzf"
+	brew install fzf
+	@echo "安装zsh-autosuggestions"
+	brew install zsh-autosuggestions
 recover:
 	@echo "恢复zshrc"
 	cp .zshrc ~/.zshrc
